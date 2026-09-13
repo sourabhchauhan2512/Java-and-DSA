@@ -1,0 +1,12 @@
+import java.util.*;
+
+public class Strings {
+    public static void main(String args[]) {
+       //concatenation
+       String firstName ="sourabh";
+       String lastName ="chauhan";
+       String fullName = firstName + " " +lastName;
+       System.out.println(fullName);
+
+    }
+}
