@@ -1,0 +1,11 @@
+import java.util.*;
+
+public class Strings {
+    public static void main(String args[]) {
+        StringBuilder sb = new StringBuilder("Sourabh Chauhan");
+
+        // set char at index 0
+        sb.setCharAt(0, 'C');
+        System.out.println(sb);
+    }
+}
