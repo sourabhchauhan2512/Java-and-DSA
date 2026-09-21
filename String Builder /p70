@@ -1,0 +1,11 @@
+import java.util.*;
+
+public class Strings {
+    public static void main(String args[]) {
+        StringBuilder sb = new StringBuilder("Sourabh Chauhan");
+
+        // delete space between name
+        sb.delete(7, 8);
+        System.out.println(sb);
+    }
+}
