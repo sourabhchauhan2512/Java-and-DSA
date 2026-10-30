@@ -1,0 +1,40 @@
+import java.util.*;
+
+public class Bits {
+
+    public static void decimalToBinary(int n) {
+
+        int binary = 0;
+        int place = 1;
+
+        while (n > 0) {
+            int rem = n % 2;
+            binary = binary + rem * place;
+            n = n / 2;
+            place = place * 10;
+        }
+
+        System.out.println(binary);
+    }
+
+    public static void binaryToDecimal(int n) {
+
+        int decimal = 0;
+        int power = 1;
+
+        while (n > 0) {
+            int rem = n % 10;
+            decimal = decimal + rem * power;
+            power = power * 2;
+            n = n / 10;
+        }
+
+        System.out.println(decimal);
+    }
+
+    public static void main(String[] args) {
+
+        decimalToBinary(13);     // 1101
+        binaryToDecimal(1101);   // 13
+    }
+}
